@@ -6,11 +6,6 @@ public class Main {
         int[] myArray; // объявление массива
         myArray = new int[10]; // создание, то есть, выделение памяти для массива на 10 элементов типа int
 
-        int[] OrderArray; // объявление массива
-        OrderArray = new int[10]; // создание, то есть, выделение памяти для массива на 10 элементов типа int
-
-        int flag = 0;
-
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < 10; i++) {
@@ -23,7 +18,7 @@ public class Main {
 
             for (int k = 0; k < 9; k++) {
 
-                if (myArray[k] > myArray[k+1]) { int temp = myArray[k]; myArray[k] = myArray[k+1]; myArray[k+1] = temp; flag =1;}
+                if (myArray[k] > myArray[k+1]) { int temp = myArray[k]; myArray[k] = myArray[k+1]; myArray[k+1] = temp; }
 
             }
 
